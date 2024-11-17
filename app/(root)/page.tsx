@@ -1,5 +1,5 @@
-
-
+import Page from "@/components/Page";
+import Pagefor from "@/components/Pagefor";
 
 export default function Home() {
   return (
@@ -16,17 +16,22 @@ export default function Home() {
         </h2>
       </div>
       {/* Image Slider */}
-      <div className="mt-12">
-     
+      <div className="mt-12"></div>
+      <div className="bg-[#9C7A4D] flex flex-col items-center justify-center h-[320px] w-full">
+        <h1 className="text-white -mt-28   font-bold text-4xl    ">
+          Explore Our Elegant Designs
+        </h1>
+        <div className="flex mt-9 space-x-4">
+          <input className="bg-[#C8AD84]" type="text" / >
+          <input type="text" name="" id="" />
+        </div>
       </div>
-      <div className="bg-[#9C7A4D] flex flex-col h-[320px] w-full">
-        <h1 className="text-white font-bold">Explore Our Elegant Designs </h1>
 
-      </div>
-      <div>
-        hello
+      <div className="bg-[#C8AD84]">
+        <Page/>
+        <Pagefor/>
       </div>
 
     </div>
   );
-} 
+}
