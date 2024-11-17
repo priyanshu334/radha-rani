@@ -1,0 +1,99 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+        </head>
+        <body>
+            <div class="header">
+                <h1>
+                    human stories <br>
+                    superhuman audiovisuals
+                </h1>
+
+
+            </div>
+            <section class="slider-section">
+                <div class="wheel">
+                    <div class="whell_card">
+                        <img src="./images/01.png" alt="">
+
+                    </div>
+                    <div class="whell_card">
+                        <img src="./images/02.png" alt="">
+
+                    </div>
+                    <div class="whell_card">
+                        <img src="./images/03.png" alt="">
+
+                    </div>
+                    <div class="whell_card">
+                        <img src="./images/04.png" alt="">
+
+                    </div>
+                    <div class="whell_card">
+                        <img src="./images/05.png" alt="">
+
+                    </div>
+                    <div class="whell_card">
+                        <img src="./images/06.png" alt="">
+
+                    </div>
+                    <div class="whell_card">
+                        <img src="./images/07.png" alt="">
+
+                    </div>
+
+
+                </div>
+                <div class="scroll-down">
+                    scroll down
+                </div>
+                <div class="sroll-down-icon">
+                    <img src="" alt="">
+
+                </div>
+            </section>
+            
+            <script>
+                gsap.registerPlugin("scroolTrigger")
+                let wheel = document.querySelector(".wheel");
+                let images = gsap.utils.toArray(".wheel_card")
+                function setup(){
+                    let radius = wheel.offsetWidth/2;
+                    let center = wheel.offsetWidth/2;
+                    let total = images.length ;
+                    let slice = (2*Math.PI)/total
+                    images.forEach((item,i)=>{
+                        let angle = i*slice;
+                        let x = center * radius*Math.sin(angle);
+                        let y = center*radius*Math.cos(angle)
+                        gsap.set(item,{
+                            rotaiton:angle+"-red",
+                            xPercent :-50,
+                            yPercent:-50,
+                            x:x,
+                            y:y,
+                        })
+                    })
+                }
+                gsap.to(".whell",{
+                    rotate:()=>-360,
+                    ease:"none",
+                    duration:images_lenght,
+                    scrollTrigger:{
+                        start:0,
+                        end:"max"
+                        ,
+                        scrub:1,
+                        snap:1/images.length,
+                        invaliddateOnRefresh:true,
+                    }
+                })
+                setup()
+            </script>
+        </body>
+        </html>

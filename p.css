@@ -1,0 +1,70 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 8vw;
+    font-family: "";
+    font-weight: lighter;
+    text-align: center;
+}
+.slider-section{
+    height: 22vh;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+.wheel{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300vw;
+    height: 300vw;
+    max-height: 2000px;
+}
+.wheel_card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6%;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    pointer-events: none;
+    z-index: 999;
+    cursor: pointer;
+}
+.scroll-down-icon{
+    position: fixed;
+    top: 4rem;
+    right: 2em;
+    transform: rotate(90deg);
+}
+.scroll-down-icon img{
+    width: 50px;
+}
+.scroll-down{
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 3em;
+    left: 2em;
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 20px;
+    overflow: visible;
+}
