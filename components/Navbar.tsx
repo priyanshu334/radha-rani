@@ -14,7 +14,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="text-xl font-bold">
           <Link href="/">
-            <Image src="/logo.png" alt="logo" width={20} height={10} />
+            <Image src="" alt="logo" width={20} height={10} />
           </Link>
         </div>
 
@@ -31,7 +31,7 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div
-          className={`absolute top-16 left-0 w-full bg-white text-black rounded-[28px] p-2 font-bold md:static md:flex md:items-center md:justify-center md:space-x-6 md:-ml-14 md:w-auto ${
+          className={`absolute top-16 left-0 w-full bg-white text-black rounded-[28px] p-2 font-bold md:static md:flex md:items-center md:justify-center md:space-x-6 md:-ml-20 md:w-auto ${
             menuOpen ? "block" : "hidden"
           }`}
         >
@@ -42,7 +42,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            className="block px-4 py-2 rounded-lg hover:bg-[#9C7A4D] hover:text-white transition-all duration-200"
+            className="block px-4 py-2 rounded-lg hover:bg-[#9C7A4D] hover:text-white   transition-all duration-200"
             href="/"
           >
             Shop
@@ -62,12 +62,12 @@ const Navbar = () => {
         </div>
 
         {/* Shopping Cart and Login */}
-        <div className="flex items-center justify-end  -mr-32 space-x-4">
+        <div className="flex items-center justify-end -mt-7  -mr-32 space-x-4">
           <button className="relative">
             <FaShoppingCart className="text-2xl text-black " />
           </button>
           <Link
-            className="bg-white rounded-2xl p-2 px-6  font-bold text-black   hidden md:inline-block"
+            className="bg-white rounded-2xl p-2 px-6  font-bold text-black  hover:bg-[#9C7A4D] hover:text-white hover:cursor-pointer hidden md:inline-block"
             href="/login"
           >
             Login

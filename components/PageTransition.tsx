@@ -25,12 +25,12 @@ const PageTransition: React.FC<PageTransitionProps> = ({ totalPages }) => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center gap-4 -mt-28 m-4">
+    <div className="flex items-center bg-[#C8AD84] border-[1px] border-black justify-center  -mt-28 m-4">
       {/* Left Arrow */}
       <button
         onClick={() => navigateToPage(currentPage - 1)}
         disabled={currentPage === 1}
-        className={`p-2 bg-gray-200 rounded-md ${
+        className={`p-2 bg-[#9C7A4D] rounded-md ${
           currentPage === 1 ? "cursor-not-allowed opacity-50" : "hover:bg-gray-300"
         }`}
       >
@@ -38,15 +38,15 @@ const PageTransition: React.FC<PageTransitionProps> = ({ totalPages }) => {
       </button>
 
       {/* Page Numbers */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center  ">
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
           <button
             key={page}
             onClick={() => navigateToPage(page)}
-            className={`p-2 rounded-md ${
+            className={`p-2 px-4 border-r-[0.5px]   ${
               page === currentPage
-                ? "bg-blue-500 text-white"
-                : "bg-gray-200 hover:bg-gray-300"
+                ? "bg-[#9C7A4D] text-white"
+                : "bg-[#C8AD84] hover:bg-gray-300"
             }`}
           >
             {page}
@@ -58,7 +58,7 @@ const PageTransition: React.FC<PageTransitionProps> = ({ totalPages }) => {
       <button
         onClick={() => navigateToPage(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className={`p-2 bg-gray-200 rounded-md ${
+        className={`p-2 bg-[#9C7A4D] rounded-md ${
           currentPage === totalPages ? "cursor-not-allowed opacity-50" : "hover:bg-gray-300"
         }`}
       >

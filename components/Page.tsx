@@ -3,53 +3,54 @@ import Card from "./Card";
 const Page = ()=>{
     const cards = [
         {
-          imageSrc: "https://via.placeholder.com/300x200?text=Card+1",
-          text: "Card 1 Text",
-        },
-        {
-          imageSrc: "https://via.placeholder.com/300x200?text=Card+2",
-          text: "Card 2 Text",
-        },
-        {
-          imageSrc: "https://via.placeholder.com/300x200?text=Card+3",
-          text: "Card 3 Text",
-        },
-        {
-            imageSrc: "https://via.placeholder.com/300x200?text=Card+1",
-            text: "Card 1 Text",
-          },
-          {
-            imageSrc: "https://via.placeholder.com/300x200?text=Card+2",
+            imageSrc: "./images/1.jpeg",
             text: "Card 2 Text",
           },
           {
-            imageSrc: "https://via.placeholder.com/300x200?text=Card+3",
-            text: "Card 3 Text",
-          },
-          {
-            imageSrc: "https://via.placeholder.com/300x200?text=Card+1",
-            text: "Card 1 Text",
-          },
-          {
-            imageSrc: "https://via.placeholder.com/300x200?text=Card+2",
+            imageSrc: "./images/1.jpeg",
             text: "Card 2 Text",
           },
           {
-            imageSrc: "https://via.placeholder.com/300x200?text=Card+3",
-            text: "Card 3 Text",
+            imageSrc: "./images/1.jpeg",
+            text: "Card 2 Text",
           },
           {
-              imageSrc: "https://via.placeholder.com/300x200?text=Card+1",
-              text: "Card 1 Text",
-            },
-            {
-              imageSrc: "https://via.placeholder.com/300x200?text=Card+2",
-              text: "Card 2 Text",
-            },
-            {
-              imageSrc: "https://via.placeholder.com/300x200?text=Card+3",
-              text: "Card 3 Text",
-            },
+            imageSrc: "./images/1.jpeg",
+            text: "Card 2 Text",
+          },
+          {
+            imageSrc: "./images/1.jpeg",
+            text: "Card 2 Text",
+          },
+          {
+            imageSrc: "./images/1.jpeg",
+            text: "Card 2 Text",
+          },
+          {
+            imageSrc: "./images/1.jpeg",
+            text: "Card 2 Text",
+          },
+          {
+            imageSrc: "./images/1.jpeg",
+            text: "Card 2 Text",
+          },
+          {
+            imageSrc: "./images/1.jpeg",
+            text: "Card 2 Text",
+          },
+          {
+            imageSrc: "./images/1.jpeg",
+            text: "Card 2 Text",
+          },
+          {
+            imageSrc: "./images/1.jpeg",
+            text: "Card 2 Text",
+          },
+          {
+            imageSrc: "./images/1.jpeg",
+            text: "Card 2 Text",
+          },
+          
       ];
       return(
         <div className=" min-h-screen flex flex-col mt-5 -mr-20 ml-4 ">

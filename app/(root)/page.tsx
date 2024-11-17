@@ -1,3 +1,5 @@
+import CategorySelector from "@/components/CategorySelect";
+import Footer from "@/components/Footer";
 import Page from "@/components/Page";
 import Pagefor from "@/components/Pagefor";
 
@@ -22,16 +24,16 @@ export default function Home() {
           Explore Our Elegant Designs
         </h1>
         <div className="flex mt-9 space-x-4">
-          <input className="bg-[#C8AD84]" type="text" / >
-          <input type="text" name="" id="" />
+          <CategorySelector/>
+    
         </div>
       </div>
 
-      <div className="bg-[#C8AD84]">
+      <div className="bg-[#C8AD84] flex flex-col space-y-40">
         <Page/>
         <Pagefor/>
       </div>
-
+       <Footer/>
     </div>
   );
 }
