@@ -10,30 +10,57 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Column 1: Logo and Description */}
-          <div className="flex flex-col items-start">
-            <h2 className="text-2xl font-bold mb-2">Radha Rani</h2>
-            <p className="text-sm">
-              Your brand description goes here. Short and concise about what you do.
-            </p>
+          <div className='flex  -ml-24 space-y-3 flex-col'>
+          <div className="flex space-x-3 -mt-1 items-start">
+             <img src="./images/logo.png" alt="" />
+            <h2 className="text-4xl font-bold mb-2">Radha Rani</h2>
+
+          
           </div>
+         <h1>
+         Address : shop address near palm mall korba chhattishgarh, PIN india
+         </h1>
+         <h1>
+         radharani@gmail.com
+         </h1>
+         <h1>
+         +91 9977121212
+         </h1>
+          </div>
+          
 
           {/* Column 2: Quick Links */}
           <div className="flex flex-col">
-            <h3 className="text-xl font-semibold mb-3">Quick Links</h3>
+            <h3 className="text-xl font-semibold mb-3">Navigation</h3>
             <ul>
               <li>
                 <Link href="/about" className="hover:text-[#9C7A4D] text-sm">
-                  About Us
+                  Home
                 </Link>
               </li>
               <li>
                 <Link href="/shop" className="hover:text-[#9C7A4D] text-sm">
-                  Shop
+                  Shop (categories)
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop" className="hover:text-[#9C7A4D] text-sm">
+                  About us 
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop" className="hover:text-[#9C7A4D] text-sm">
+                  Blog
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-[#9C7A4D] text-sm">
-                  Contact
+                  Returns and  Exchanges
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop" className="hover:text-[#9C7A4D] text-sm">
+                  shipping information
                 </Link>
               </li>
             </ul>
@@ -41,11 +68,11 @@ const Footer = () => {
 
           {/* Column 3: Contact Information */}
           <div className="flex flex-col">
-            <h3 className="text-xl font-semibold mb-3">Contact Info</h3>
+            <h3 className="text-xl font-semibold mb-3">Legal Information</h3>
             <ul>
-              <li className="text-sm">Phone: +1 (123) 456-7890</li>
-              <li className="text-sm">Email: support@yourbrand.com</li>
-              <li className="text-sm">Address: 123 Street, City, Country</li>
+              <li className="text-sm">Terms and condition</li>
+              <li className="text-sm">FAQ</li>
+            
             </ul>
           </div>
 

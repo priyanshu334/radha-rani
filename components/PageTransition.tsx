@@ -25,7 +25,7 @@ const PageTransition: React.FC<PageTransitionProps> = ({ totalPages }) => {
   }, []);
 
   return (
-    <div className="flex items-center bg-[#C8AD84] border-[1px] border-black justify-center  -mt-28 m-4">
+    <div className="flex items-center bg-[#C8AD84] border-[1px] border-black justify-center hover:shadow-md  -mt-28 m-4">
       {/* Left Arrow */}
       <button
         onClick={() => navigateToPage(currentPage - 1)}
@@ -38,7 +38,7 @@ const PageTransition: React.FC<PageTransitionProps> = ({ totalPages }) => {
       </button>
 
       {/* Page Numbers */}
-      <div className="flex items-center  ">
+      <div className="flex items-center hover:cursor-pointer  ">
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
           <button
             key={page}

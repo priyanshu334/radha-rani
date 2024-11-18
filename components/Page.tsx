@@ -53,7 +53,7 @@ const Page = ()=>{
           
       ];
       return(
-        <div className=" min-h-screen flex flex-col mt-5 -mr-20 ml-4 ">
+        <div className=" hover:shadow-black min-h-screen flex flex-col mt-5 -mr-20 ml-4 ">
            
        <div className=" ml-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {cards.map((card,index)=>(

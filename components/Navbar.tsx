@@ -12,9 +12,9 @@ const Navbar = () => {
     <nav className=" bg-[#C8AD84]    text-white">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
-        <div className="text-xl font-bold">
+        <div className="text-xl -ml-48 font-bold">
           <Link href="/">
-            <Image src="" alt="logo" width={20} height={10} />
+            <img src="./images/logo.png" alt="logo" />
           </Link>
         </div>
 
@@ -31,7 +31,7 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div
-          className={`absolute top-16 left-0 w-full bg-white text-black rounded-[28px] p-2 font-bold md:static md:flex md:items-center md:justify-center md:space-x-6 md:-ml-20 md:w-auto ${
+          className={`absolute top-16 left-0 w-full bg-white text-black rounded-[28px] p-2 font-bold md:static md:flex md:items-center md:justify-center md:space-x-6 md:ml-16 md:w-auto ${
             menuOpen ? "block" : "hidden"
           }`}
         >

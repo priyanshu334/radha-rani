@@ -25,7 +25,7 @@ export default function CategorySelector() {
   };
 
   return (
-    <div className="bg-[#C8AD84] flex   p-2 w-full max-w-xs mx-auto">
+    <div className="bg-[#9C7A4D] flex rounded-lg text-white  p-2 w-full max-w-xs mx-auto">
       {/* Label */}
       
       
@@ -35,7 +35,7 @@ export default function CategorySelector() {
         id="category"
         value={selectedCategory}
         onChange={handleChange}
-        className="w-full bg-[#C8AD84] p-2   rounded-md shadow-sm  text-black"
+        className="w-full bg-[#9C7A4D] p-2   rounded-lg shadow-sm  text-white"
       >
         <option value="" disabled>
           Choose a category
@@ -48,25 +48,7 @@ export default function CategorySelector() {
       </select>
 
       </div>
-      <div>
-      <select
-        id="category"
-        value={selectedCategory}
-        onChange={handleChange}
-        className="w-full bg-[#C8AD84] p-2   rounded-md shadow-sm  text-black"
-      >
-        <option value="" disabled>
-          Choose a category
-        </option>
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </select>
-
-      </div>
-     
+    
       
     </div>
   );

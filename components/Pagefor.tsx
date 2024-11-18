@@ -3,7 +3,7 @@
 import React from "react";
 import PageTransition from "@/components/PageTransition";
 
-const Page = () => {
+const Pagefor = () => {
   return (
     <div className=" flex flex-col items-center justify-center">
 
@@ -12,4 +12,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Pagefor;

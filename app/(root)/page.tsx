@@ -1,5 +1,9 @@
 import CategorySelector from "@/components/CategorySelect";
 import Footer from "@/components/Footer";
+import GradientWave from "@/components/gradientWave";
+import ImageSlider from "@/components/ImageSlider";
+import Carousel from "@/components/ImageSlider";
+import CircularCarousel from "@/components/ImageSlider";
 import Page from "@/components/Page";
 import Pagefor from "@/components/Pagefor";
 
@@ -18,22 +22,40 @@ export default function Home() {
         </h2>
       </div>
       {/* Image Slider */}
+
       <div className="mt-12"></div>
-      <div className="bg-[#9C7A4D] flex flex-col items-center justify-center h-[320px] w-full">
+      <div className="bg-[#C8AD84] flex flex-col items-center justify-center h-[320px] w-full">
         <h1 className="text-white -mt-28   font-bold text-4xl    ">
           Explore Our Elegant Designs
         </h1>
         <div className="flex mt-9 space-x-4">
           <CategorySelector/>
+          <CategorySelector/>
     
         </div>
+        
       </div>
 
       <div className="bg-[#C8AD84] flex flex-col space-y-40">
         <Page/>
         <Pagefor/>
       </div>
+      <GradientWave/>
+      <div className="bg-white flex justify-center font-semibold h-[35px]">
+     <h1 className="my-2">
+     Special Offers If any
+      </h1>
+      </div>
        <Footer/>
+       <div className="bg-[#C8AD84] flex justify-between h-[30px] max-w-full">
+        <h1 className="font-medium mx-4 my-1">
+        Copyright © 2024 All rights resesrved
+        </h1>
+        <h1 className="font-medium mx-4 my-1">
+        Privacy Policy
+        </h1>
+
+       </div>
     </div>
   );
 }
