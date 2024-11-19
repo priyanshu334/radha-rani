@@ -9,8 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "var(--background)", // Custom background color
+        foreground: "var(--foreground)", // Custom foreground color
+      },
+      fontFamily: {
+        sans: ["var(--font-inter)", "sans-serif"], // Inter as the global default sans font
       },
     },
   },

@@ -9,7 +9,8 @@ import Pagefor from "@/components/Pagefor";
 
 export default function Home() {
   return (
-    <div className="bg-[#C8AD84] min-h-screen ">
+    <div className="bg-[#C8AD84] min-h-screen font-sans">
+      {/* Header Section */}
       <div className="flex flex-col items-center justify-center text-center">
         {/* Main Heading */}
         <h1 className="font-bold text-[28px] sm:text-[36px] md:text-[48px] mt-10 text-white leading-tight max-w-4xl">
@@ -21,41 +22,41 @@ export default function Home() {
           fashion tradition where every emotion meets.
         </h2>
       </div>
-      {/* Image Slider */}
 
+      {/* Image Slider Section */}
       <div className="mt-12"></div>
       <div className="bg-[#C8AD84] flex flex-col items-center justify-center h-[320px] w-full">
-        <h1 className="text-white -mt-28   font-bold text-4xl    ">
+        <h1 className="text-white -mt-28 font-bold text-4xl">
           Explore Our Elegant Designs
         </h1>
         <div className="flex mt-9 space-x-4">
-          <CategorySelector/>
-          <CategorySelector/>
-    
+          <CategorySelector />
+          <CategorySelector />
         </div>
-        
       </div>
 
+      {/* Pages Section */}
       <div className="bg-[#C8AD84] flex flex-col space-y-40">
-        <Page/>
-        <Pagefor/>
+        <Page />
+        <Pagefor />
       </div>
-      <GradientWave/>
-      <div className="bg-white flex justify-center font-semibold h-[35px]">
-     <h1 className="my-2">
-     Special Offers If any
-      </h1>
-      </div>
-       <Footer/>
-       <div className="bg-[#C8AD84] flex justify-between h-[30px] max-w-full">
-        <h1 className="font-medium mx-4 my-1">
-        Copyright © 2024 All rights resesrved
-        </h1>
-        <h1 className="font-medium mx-4 my-1">
-        Privacy Policy
-        </h1>
+      
+      {/* Gradient Wave */}
+      <GradientWave />
 
-       </div>
+      {/* Special Offers Section */}
+      <div className="bg-white flex justify-center font-semibold h-[35px]">
+        <h1 className="my-2">Special Offers If any</h1>
+      </div>
+
+      {/* Footer */}
+      <Footer />
+
+      {/* Footer Bottom Section */}
+      <div className="bg-[#C8AD84] flex justify-between h-[30px] max-w-full">
+        <h1 className="font-medium mx-4 my-1">Copyright © 2024 All rights reserved</h1>
+        <h1 className="font-medium mx-4 my-1">Privacy Policy</h1>
+      </div>
     </div>
   );
 }
