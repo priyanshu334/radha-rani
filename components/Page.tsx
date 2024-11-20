@@ -17,8 +17,8 @@ const Page = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col mt-5 px-4 mr-36 ml-36">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-4">
+    <div className="min-h-screen flex flex-col mt-5  mr-36 ml-36">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-4  lg:-m-24       ">
         {cards.map((card, index) => (
           <Card key={index} imageSrc={card.imageSrc} text={card.text} />
         ))}

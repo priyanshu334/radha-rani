@@ -6,6 +6,7 @@ import Carousel from "@/components/ImageSlider";
 import CircularCarousel from "@/components/ImageSlider";
 import Page from "@/components/Page";
 import Pagefor from "@/components/Pagefor";
+import WaveSvg from "@/components/WaveSvg";
 
 export default function Home() {
   return (
@@ -42,7 +43,11 @@ export default function Home() {
       </div>
       
       {/* Gradient Wave */}
-      <GradientWave />
+      <div className="bg-[#9C7A4D] w-full relative">
+  {/* SVG as background or decoration */}
+  <img src="./images/Vector.svg" alt="Decorative SVG" className="w-full pb-56  h-auto" />
+</div>
+
 
       {/* Special Offers Section */}
       <div className="bg-white flex justify-center font-semibold h-[35px]">

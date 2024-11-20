@@ -66,7 +66,7 @@ const PageTransition: React.FC<PageTransitionProps> = ({ totalPages }) => {
             key={index}
             onClick={() => typeof item === "number" && navigateToPage(item)}
             disabled={item === "..."}
-            className={`p-2 px-4 py-4 rounded-md border-black border-r-[1px] ${
+            className={`p-2 px-4 py-4       border-black border-r-[1px] ${
               item === currentPage
                 ? "bg-[#9C7A4D] text-white"
                 : "bg-[#C8AD84] hover:bg-gray-300"
